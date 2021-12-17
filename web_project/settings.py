@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-81-8^+dh8)@79jg(kr%%4c(=o_x3rcgs^_ov*jr@67!z^@ga+r'
+SECRET_KEY = '1e8e9af8178e72a84fd40773555a02cf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -30,6 +30,9 @@ ALLOWED_HOSTS = [
     "localhost",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://weightassist-django-test.azurewebsites.net",
+]
 
 # Application definition
 
