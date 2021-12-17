@@ -1,0 +1,6 @@
+**/__pycache__
+**/.classpath
+**/env
+**/bin
+**/secrets.dev.yaml
+**/values.dev.yaml
