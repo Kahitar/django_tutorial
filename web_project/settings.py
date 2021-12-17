@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-81-8^+dh8)@79jg(kr%%4c(=o_x3rcgs^_ov*jr@67!z^@ga+r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "weightassist-django-test.azurewebsites.net",
+    "localhost",
+]
 
 
 # Application definition
