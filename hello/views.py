@@ -1,8 +1,9 @@
 from django.utils.timezone import datetime
 from django.shortcuts import render, redirect
+from django.views.generic import ListView
+from django.http import HttpResponse
 from hello.forms import LogMessageForm
 from hello.models import LogMessage
-from django.views.generic import ListView
 
 
 class HomeListView(ListView):
@@ -13,6 +14,8 @@ class HomeListView(ListView):
         context = super(HomeListView, self).get_context_data(**kwargs)
         return context
 
+def health(request):
+    return HttpResponse("Health i.O. !")
 
 def about(request):
     return render(request, "hello/about.html")
